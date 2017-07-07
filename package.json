@@ -1,0 +1,34 @@
+{
+    "name": "singlefull.js",
+    "version": "0.1.0",
+    "description": "Create  beautiful fullscreen scrolling websites",
+    "main": "jquery.singlefull.js",
+    "scripts": {
+        "start": "node ./bin/www"
+    },
+    "dependencies": {
+        "jquery": ">=1.6.0"
+    },
+    "authors": [
+        "Flame https://github.com/AdvancedCat"
+    ],
+    "license": "MIT",
+    "namespace": "$.fn.fullpage",
+    "dependencies": {
+        "body-parser": "~1.13.2",
+        "cookie-parser": "~1.3.5",
+        "debug": "~2.2.0",
+        "express": "~4.13.1",
+        "jade": "~1.11.0",
+        "morgan": "~1.6.1",
+        "serve-favicon": "~2.3.0"
+    },
+    "devDependencies": {
+        "gulp": "^3.9.0",
+        "gulp-minify-css": "^1.2.1",
+        "gulp-rename": "^1.2.2",
+        "gulp-sass": "^2.0.4",
+        "gulp-sourcemaps": "^1.6.0",
+        "gulp-uglify": "^1.4.1"
+    }
+}

@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>ARMAR</title>
+        <link rel="stylesheet" type="text/css" href="css/jquery.singlefull.css">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Kurale|Lato" rel="stylesheet"> 
+    </head>
+
+    <body>
+        <div id="single">
+            <div data-target="home" id="home">
+                <div class="content-resizer">
+                    <h1 id="logo">O nas</h1>
+                    <div id="br">
+                    <div class="block">
+                        <blockquote><i>ARMAR działa od 1998 r. jako spółka cywilna. Świadczymy szeroki zakres usług geodezyjnych i kartograficznych, takich jak:
+                                Z Mapy do celów projektowych, obsługa inwestycji kubaturowych, drogowych i liniowych.Wieloletnie doświadczenie, wsparte stale pogłębianą wiedzą,
+                                Z pozwala nam odpowiedzialnie podejmować zadania z szeroko rozumianej geodezji. Zasięgiem swojego działania obejmujemy  województwo wielkopolskie, szczególną
+                                Zuwagę zwracając na okolice Poznania i Grodziska Wielkopolskiego. Wśród naszych zadowolonych klientów znajdują się
+                                Zurzędy miast, deweloperzy, firmy utrzymujące infrastrukturę  teletechniczną, firmy drogowe.
+                                <p>Zapraszamy do korzystania z naszych usług.</p></i>
+                        </blockquote> 
+                   
+                    </div>
+                    </div>
+                    <img src="img/zilinski2.jpg" alt=""/>
+                    <br /><br />
+                    <div class="jquery-script-ads" align="center"><script type="text/javascript"></script> </div>   
+                </div>
+            </div>
+            <div data-target="about" id="about">
+                <div class="content-resizer">
+                    <div class="block"
+                         <h2 class="message"><i>Zakres naszych usług</i></h2>
+                    <div>
+                            Wykonujemy prace w pełnym zakresie spotykanym w codziennej praktyce:
+                    
+                            <ul>
+                                <li>Mapy dla celów projektowych</li>
+                                <li>Tyczenie budynków i budowli</li>
+                                <li>Podziały nieruchomości</li>
+                                <li>Wznowienia znaków granicznych</li>
+                                <li>Obsługę inwestycji</li>
+                            </ul>
+                    
+                            <div id="br">
+                            Poza typowymi wykonujemy:
+                            <ul>
+                                <li>Pomiary elewacji</li>
+                                <li>Obserwacje przemieszczeń</li>
+                                <li>Inwentaryzacje sieci technicznego uzbrojenia terenu (kanalizacja deszczowa, melioracja szczegółowa, sieci energetyczne)</li>
+                            </ul>
+                            </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div data-target="examples" id="examples">
+                <div class="content-resizer">
+                    <h2 class="message">Ceny i terminy</h2>
+                    <!--<p> <img src="img/assassin.jpg" id="img-example" class="img-rounded" data-img="true" width="440" alt="Assassin's Creed 3" /> </p>-->
+                    <!--<p> <span class="alt-img"></span> </p>-->
+                    <!-- <a href="#" data-anchor="about" class="btn-normal">Back</a> <a href="#" data-anchor="contact" class="btn-normal">Next</a> --></div>
+            </div>
+            <div data-target="contact" id="contact">
+                <div class="content-resizer">
+                    <h2 class="message">Nasze referencje</h2>
+                </div>
+            </div>
+            <div data-target="contact1" id="contact">
+                <div class="content-resizer">
+                    <h2 class="message">Kontakt</h2>
+                </div>
+            </div>
+            <!-- vertical nav -->
+            <div id="fp-nav" class="right" style="margin-top: -43.5px;">
+                <ul>
+                    <li><a href="#" class="active" data-anchor="home"><span></span></a>
+                        <div class="fp-tooltip right">O nas</div>
+                    </li>
+                    <li><a href="#"  data-anchor="about"><span></span></a>
+                        <div class="fp-tooltip right">Zakres naszych usług</div>
+                    </li>
+                    <li><a href="#"  data-anchor="examples"><span></span></a>
+                        <div class="fp-tooltip right">Ceny i terminy</div>
+                    </li>
+                    <li><a href="#"  data-anchor="contact"><span></span></a>
+                        <div class="fp-tooltip right">Nasze referencje</div>
+
+                    </li>
+                    <li><a href="#"  data-anchor="contact1"><span></span></a>
+                        <div class="fp-tooltip right">Kontakt</div>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Page loads faster -->
+        <script src="http://code.jquery.com/jquery-1.12.3.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+        <script src="js/jquery.singlefull.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $("#single").singlefull({
+                    speed: 1000,
+                    loopScroll: true,
+                    loopTop: false,
+                    loopBottom: true
+                });
+                // Just a javascript alignment to the content
+                function alignContent() {
+                    var windowHeight = $(window).height();
+
+                    $('.content-resizer').each(function () {
+                        contentHeight = $(this).height();
+                        $(this).css('top', (windowHeight / 2) - (contentHeight / 2));
+                    });
+
+                    $('.alt-img').html($("#img-example").attr('src'));
+                }
+
+                // Execute the function
+                alignContent();
+
+                // Bind the function to the window.onresize
+                $(window).bind("resize", function () {
+                    alignContent();
+                });
+
+
+            });
+        </script>
+    </body>
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-36251023-1']);
+        _gaq.push(['_setDomainName', 'jqueryscript.net']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+</html>
