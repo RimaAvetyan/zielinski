@@ -8,6 +8,7 @@
 
 /* Page Style */
 
+
 body { background: #034368; }
 
 #logo, .message { color: #fff; }
@@ -20,8 +21,9 @@ body { background: #034368; }
 }
 .block{
     font-size: 20px;
-    color: #bab8b8;
+    color: white;
     font-family:'Kurale', serif;
+    text-align: left;
 }
 #br{
     padding: 20px;
@@ -74,7 +76,9 @@ div[data-target] {
 div[data-target] > div {
   text-align: center;
   position: relative;
+
 }
+
 
 div#home { background: #066093;
 
@@ -83,8 +87,10 @@ div#home { background: #066093;
 div#about { background: #0670ad; }
 
 div#examples { background: #0880c4; }
+div#date{background: #0990f6;}
 
 div#contact { background: #0b9bee; }
+div#contact1{background: #46b1ef;}
 
 
 
